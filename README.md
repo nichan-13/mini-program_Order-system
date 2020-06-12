@@ -47,7 +47,7 @@
 
 - 导入项目填写**测试号**即可
  
-- 除了小程序客户端外还需要服务端，服务端由**Wampserver**集成包及**ThinkPHP**框架搭建，源码见
+- 除了小程序客户端外还需要服务端，服务端由**Wampserver**集成包及**ThinkPHP**框架搭建，源码见[点餐小程序服务端](https://github.com/nichan-13/mini-program_order-system-server.git)
 
 
 ## 参考文档  
