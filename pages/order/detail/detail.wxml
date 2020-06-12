@@ -1,0 +1,77 @@
+<!--pages/order/detail/detail.wxml-->
+<view class="top">
+	<view class="card" wx:if="{{!is_taken}}">
+		<view class="card-title">取餐号</view>
+		<view class="card-content">
+			<view class="card-info">
+				<text class="card-code">{{code}}</text>
+				<text class="card-info-r">美食正在制作中...</text>
+			</view>
+			<view class="card-coomment" wx:if="{{comment !== ''}}">备注： {{comment}}</view>
+			<view class="card-tips">稍等片刻，美味马上就好 (｡･ω･｡)ﾉ♡</view>
+		</view>
+	</view>
+</view>
+
+<view class="order">
+	<view class="order-title">订单详情</view>
+	<view class="order-list">
+		<!-- 输出订单商品 -->
+		<view class="order-item" wx:for="{{order_food}}" wx:key="id">
+			<view class="order-item-l">
+				<image class="order-item-image" mode="widthFix" src="{{item.image_url}}"></image>
+				<view>
+					<view class="order-item-name">{{item.name}}</view>
+					<view class="order-item-number">x {{item.number}}</view>
+				</view>
+			</view>
+			<view class="order-item-price">{{priceFormat(item.price)}}</view>
+		</view>
+		<!-- 优惠信息 -->
+		<view class="order-item" wx:if="{{checkPromotion(promotion)}}">
+			<view class="order-item-l">
+				<text class="order-promotion-icon">减</text>满减优惠
+			</view>
+			<view class="order-promotion-price">- {{priceFormat(promotion)}}</view>
+		</view>
+		<!-- 小计 -->
+		<view class="order-item">
+			<view class="order-item-l">小计</view>
+			<view class="order-total-price">{{priceFormat(price)}}</view>
+		</view>
+	</view>
+</view>
+
+<view class="list">
+	<view class="list-title">
+		订单号码
+		<view class="list-info">{{sn}}</view>
+	</view>
+	<view class="list-title">
+		下单时间
+		<view class="list-info">{{create_time}}</view>
+	</view>
+	<view class="list-title">
+		付款时间
+		<view class="list-info">{{sn}}</view>
+	</view>
+	<view wx:if="{{is_taken}}" class="list-title">
+		取餐时间
+		<view class="list-info">{{taken_time}}</view>
+	</view>
+</view>
+
+<view class="tips" wx:if="{{is_taken}}">取餐号为 {{code}} 的顾客,您已取餐</view>
+<view class="tips" wx:else>请凭此页面至取餐台取餐~</view>
+
+<wxs module="priceFormat">
+	module.exports = function(price) {
+		return '¥ ' + parseFloat(price)
+	}
+</wxs>
+<!-- 检查满减信息 -->
+<wxs module="checkPromotion">
+	module.exports = function(promotion) {
+		return parseFloat(promotion) > 0
+	}
+</wxs>

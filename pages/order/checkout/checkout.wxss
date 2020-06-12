@@ -1,0 +1,122 @@
+/* pages/order/checkout/checkout.wxss */
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #f8f8f8;
+}
+
+.content {
+  flex: 1;
+  overflow: scroll;
+  margin-bottom: 40rpx;
+}
+
+.content-title {
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  background-color: #fff;
+  padding: 0 20rpx;
+}
+
+.order {
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.order-title {
+  font-size: 24rpx;
+  color: #a2a1a0;
+  padding: 24rpx;
+}
+
+.order-list {
+  padding: 0 30rpx;
+}
+
+.order-item {
+  background-color: #fff;
+  display: flex;
+  font-size: 32rpx;
+  padding: 25rpx 0;
+  border-top: 1px solid #e3e3e3;
+}
+
+.order-item-l {
+  flex: 1;
+  display: flex;
+}
+
+.order-item-image {
+  width: 94rpx;
+  height: 94rpx;
+  margin-right: 25rpx;
+}
+
+.order-item-number {
+  color: #8f8f8f;
+  margin-top: 4rpx;
+  font-size: 30rpx;
+}
+
+.order-promotion-icon {
+  display: inline-block;
+  background-color: rgb(255, 145, 0);
+  color: #fff;
+  padding: 2rpx 6rpx 6rpx;
+  font-size: 28rpx;
+  margin-right: 8rpx;
+}
+
+.order-promotion-price {
+  color: #f24;
+}
+
+.order-total-price {
+  font-size: 40rpx;
+  color: #f24;
+}
+
+.operate {
+  height: 110rpx;
+  display: flex;
+}
+
+.operate-info {
+  width: 74%;
+  background-color: #353535;
+  color: #fff;
+  line-height: 110rpx;
+  padding-left: 40rpx;
+}
+
+.operate-btn {
+  width: 26%;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 110rpx;
+  background-color: #f24;
+  color: #fff;
+}
+
+.content-comment {
+  padding: 10rpx 30rpx 20rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.content-comment>label {
+  font-size: 32rpx;
+  color: #a3a3a3;
+}
+
+.content-comment textarea {
+  width: 95%;
+  font-size: 24rpx;
+  background-color: #f2f2f2;
+  padding: 20rpx;
+  height: 160rpx;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+}

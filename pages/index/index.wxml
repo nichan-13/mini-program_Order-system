@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+	<block wx:for="{{swiper}}" wx:key="index">
+		<swiper-item>
+			<image src="{{item}}"></image>
+		</swiper-item>
+	</block>
+</swiper>
+<button class="menu-start" bindtap="start">开始点餐 →</button>
+<!-- 中间部分 -->
+<view class="ad-box">
+  <image src="{{ad}}" class="ad-image" bindtap="start"></image>
+</view>
+<!-- 底部商品图 -->
+<view class="bottom-box">
+  <view class="bottom-pic" wx:for="{{category}}" wx:key="index">
+    <image src="{{item}}" class="bottom-image" bindtap="start"></image>
+  </view>
+</view>

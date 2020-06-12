@@ -1,0 +1,86 @@
+/* pages/order/list/list.wxss */
+
+page {
+  background-color: #f8f8f8;
+}
+
+.list-empty {
+  margin-top: 80rpx;
+  text-align: center;
+  color: #666;
+  font-size: 40rpx;
+}
+
+.menu-start {
+  margin: 30rpx;
+  border-radius: 80rpx;
+  background-color: #f24;
+  color: #fff;
+}
+
+
+.list-item {
+  display: flex;
+  padding: 20rpx;
+  color: #999;
+  font-size: 26rpx;
+  border-bottom: 1rpx solid #ececec;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.list-item-l {
+  flex: 1;
+}
+
+.list-item-name {
+  font-size: 30rpx;
+  color: #666;
+  margin-right: 20rpx;
+  margin-bottom: 10rpx;
+}
+
+.list-item-price {
+  color: #f24;
+  margin-left: 20rpx;
+  font-weight: 600;
+}
+
+.list-item-t {
+  margin-bottom: 10rpx;
+}
+
+.list-item-r >view {
+  display: flex;
+  margin-top: 30rpx;
+}
+
+.list-item-detail {
+  text-align: center;
+  color: #f24;
+  font-size: 24rpx;
+  padding: 17rpx 10rpx;
+  background-color: #fff;
+  border: 1rpx solid #f24;
+}
+
+.list-item-taken {
+  text-align: center;
+  color: #fff;
+  font-size: 24rpx;
+  padding: 17rpx 10rpx;
+  margin-left: 20rpx;
+  background-color: #f24;
+}
+
+.taken-yes {
+  background-color: #e7e6e4;
+  color: rgb(95, 92, 92);
+}
+
+.list-item-last {
+  display: block;
+  text-align: center;
+}

@@ -1,0 +1,104 @@
+{
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false
+	},
+	"appid": "",
+	"projectname": "Order%20system",
+	"libVersion": "2.8.1",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/list/list",
+					"pathName": "pages/list/list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/order/list/list",
+					"pathName": "pages/order/list/list",
+					"query": "order_id=3",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "pages/order/checkout/checkout",
+					"pathName": "pages/order/checkout/checkout",
+					"query": "order_id=1",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "pages/order/checkout/checkout",
+					"pathName": "pages/order/checkout/checkout",
+					"query": "order_id=4",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "pages/order/detail/detail",
+					"pathName": "pages/order/detail/detail",
+					"query": "order_id=5",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "pages/record/record",
+					"pathName": "pages/record/record",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

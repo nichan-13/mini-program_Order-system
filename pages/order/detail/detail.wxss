@@ -1,0 +1,145 @@
+/* pages/order/detail/detail.wxss */
+page {
+  background-color: #f8f8f8;
+}
+
+.card {
+  margin: 20rpx auto;
+  width: 96%;
+  background-color: #fef9f4;
+  display: flex;
+  font-size: 30rpx;
+}
+
+.card-title {
+  width: 28rpx;
+  padding: 0 30rpx;
+  background-color: rgb(255, 115, 0);
+  color: #fff;
+  border-left: 1rpx solid #de5f4b;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+}
+
+.card-content {
+  flex: 1;
+  margin-left: 50rpx;
+}
+
+.card-info {
+  margin-left: 10rpx;
+}
+
+.card-code {
+  font-size: 60rpx;
+  margin-right: 40rpx;
+}
+
+.card-info-r {
+  font-size: 24rpx;
+  color: rgb(255, 133, 34);
+}
+
+.card-comment {
+  color: #de5f4b;
+  font-weight: 600;
+  margin-top: 8rpx;
+}
+
+.card-tips {
+  color: #a2a1a0;
+  margin: 10rpx 0 20rpx;
+  font-size: 24rpx;
+}
+
+.order {
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.order-title {
+  font-size: 24rpx;
+  color: #a2a1a0;
+  padding: 24rpx;
+}
+
+.order-list {
+  padding: 0 30rpx;
+}
+
+.order-item {
+  background-color: #fff;
+  display: flex;
+  font-size: 32rpx;
+  padding: 25rpx 0;
+  border-top: 1px solid #e3e3e3;
+}
+
+.order-item-l {
+  flex: 1;
+  display: flex;
+}
+
+.order-item-image {
+  width: 94rpx;
+  height: 94rpx;
+  margin-right: 25rpx;
+}
+
+.order-item-number {
+  color: #8f8f8f;
+  margin-top: 4rpx;
+  font-size: 30rpx;
+}
+
+.order-promotion-icon {
+  display: inline-block;
+  background-color: rgb(255, 145, 0);
+  color: #fff;
+  padding: 2rpx 6rpx 6rpx;
+  font-size: 28rpx;
+  margin-right: 8rpx;
+}
+
+.order-promotion-price {
+  color: #f24;
+}
+
+.order-total-price {
+  font-size: 40rpx;
+  color: #f24;
+}
+
+.list {
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.list-title {
+  font-size: 30rpx;
+  color: #818181;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #e3e3e3;
+  display: flex;
+}
+
+.list-title:last-child {
+  border-bottom: none;
+}
+
+.list-info {
+  color: #000;
+  margin-left: 20rpx;
+}
+
+.tips {
+  width: 90%;
+  text-align: center;
+  margin: 20rpx auto;
+  padding: 12rpx 20rpx;
+  background-color: #f24;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 10rpx;
+}
